@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+  <style>
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .box1 {
+      height: 100vh;
+      width: 100vw;
+      background-color: white;
+    }
+
+    .boxmain {
+      height: 100px;
+      background-color: rgb(56, 227, 65);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: rgb(255, 249, 249);
+    }
+
+    .heading {
+      font-weight: 900;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .box2 {
+      margin-top: 10px;
+      width: 30%;
+    }
+
+    .box2 ul {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box2 ul li {
+      list-style: none;
+      font-weight: 900;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .box2 ul li:hover {
+      color: red;
+    }
+
+    .forgrid {
+      padding: 60px;
+      display: grid;
+      margin-top: 40px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gridbox {
+      height: 80%;
+      box-shadow: 5px 5px 5px rgb(224, 220, 220), -5px -5px 5px rgb(224, 220, 220);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gridbox:hover {
+      transform: scale(1.05);
+      box-shadow: 8px 8px 10px rgb(200, 200, 200), -8px -8px 10px rgb(200, 200, 200);
+    }
+
+    .footer {
+      height: 60px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: large;
+      font-weight: 900;
+      background-color: black;
+      padding: 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .forgrid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .box2 {
+        width: 100%;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="box1">
+    <div class="boxmain">
+      <h1 class="heading"> Welcome to Your Website Task</h1>
+  
+      <div class="box2">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="forgrid">
+      <div class="gridbox">
+        <h1>Our Mission</h1>
+        <p>We aim to provide the best solutions for your needs with top-notch services.</p>
+      </div>
+      <div class="gridbox">
+        <h1>Our Services</h1>
+        <p>From web development to digital marketing, we offer a range of professional services.</p>
+      </div>
+      <div class="gridbox">
+        <h1>Get in Touch</h1>
+        <p>Contact us anytime for queries, collaborations, or business opportunities.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      Created by Pranshu Chauhan 
+    </div>
+  </div>
+</body>
+</html>
